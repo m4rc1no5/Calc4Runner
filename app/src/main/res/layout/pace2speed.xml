@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_height="fill_parent" 
+        android:isScrollContainer="true" 
+        android:scrollbarAlwaysDrawVerticalTrack="true" 
+        android:scrollbarStyle="outsideInset" 
+        android:scrollbars="vertical" android:layout_width="fill_parent" android:id="@+id/scroll_p2s">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="10dip">
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/p2s_info" android:id="@+id/p2s_txt_info" android:gravity="center" android:padding="20dip"></TextView>
+    </LinearLayout>
+    <TableLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/tableLayout1" android:stretchColumns="3">
+        <TableRow android:layout_height="wrap_content" android:id="@+id/tableRow1" android:layout_width="wrap_content">
+
+            <TextView
+                android:id="@+id/ilosc_minut"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/ilosc_minut" >
+</TextView>
+            <EditText android:layout_height="wrap_content" android:inputType="number" android:layout_width="wrap_content" android:id="@+id/p2s_input_minuty" android:width="60dip" android:maxLength="3"></EditText>
+            <TextView android:id="@+id/textView1" android:layout_height="wrap_content" android:text="@string/p2s_minuty" android:layout_width="fill_parent" android:paddingLeft="5dip" android:width="60dip"></TextView>
+            <TextView android:id="@+id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        </TableRow>
+        <TableRow android:layout_height="wrap_content" android:id="@+id/tableRow2" android:layout_width="wrap_content">
+            <TextView android:id="@+id/textView6" android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="right" android:paddingRight="10dip" android:paddingLeft="10dip" android:text="@string/ilosc_sekund"></TextView>
+            <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="number" android:id="@+id/p2s_input_sekundy" android:width="60dip" android:maxLength="2"></EditText>
+            <TextView android:id="@+id/textView7" android:layout_height="wrap_content" android:text="@string/p2s_sekundy" android:layout_width="fill_parent" android:paddingLeft="5dip" android:width="60dip"></TextView>
+            <TextView android:id="@+id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        </TableRow>
+        <TableRow android:layout_height="wrap_content" android:id="@+id/tableRow5" android:layout_width="match_parent">
+        	<TextView android:id="@+id/textView4" android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="right" android:paddingRight="10dip" android:paddingLeft="10dip"></TextView>
+        	<Button android:text="@string/p2s_oblicz" android:id="@+id/p2s_btn_oblicz" android:layout_height="wrap_content" android:layout_span="2" android:layout_width="match_parent"></Button>
+        	<TextView android:id="@+id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout3" android:layout_width="match_parent" android:orientation="vertical" android:layout_gravity="right" android:padding="20dip">
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/p2s_tabelka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tbl_szary_ciemny"
+        android:visibility="invisible" android:layout_margin="4dip">
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip"
+            android:paddingTop="4dip" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="@string/tempo"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="@string/predkosc"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/tbl_szary_jasny"
+            android:paddingBottom="4dip"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip"
+            android:paddingTop="2dip" >
+
+            <TextView
+                android:id="@+id/p2s_txt_minkm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:textSize="11dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p2s_txt_kph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:textColor="@color/zielony"
+                android:textSize="11dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/p2s_txt_mph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:textColor="@color/zielony"
+                android:textSize="11dip"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+</ScrollView>

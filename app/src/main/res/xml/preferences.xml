@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/pref_title">
+    <PreferenceCategory android:title="@string/dane_usera">
+        <ListPreference android:title="@string/plec" android:entryValues="@array/ar_plec_val" android:entries="@array/ar_plec_nazw" android:defaultValue="1" android:key="default_plec" android:summary="@string/plec_podaj"></ListPreference>
+        <EditTextPreference android:key="default_masa" android:title="@string/masa" android:summary="@string/masa_podaj" android:numeric="decimal" android:maxLength="5"></EditTextPreference>
+        <EditTextPreference android:key="default_wzrost" android:title="@string/wzrost" android:summary="@string/wzrost_podaj" android:numeric="integer" android:maxLength="3"></EditTextPreference>
+        <EditTextPreference android:key="default_wiek" android:summary="@string/wiek_podaj" android:title="@string/wiek" android:numeric="integer" android:maxLength="3"></EditTextPreference>
+    </PreferenceCategory>
+    
+</PreferenceScreen>

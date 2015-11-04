@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WindowTitleBackground">
+        <item name="android:background">@color/tbl_szary_ciemny</item>
+        <item name="android:paddingLeft">6dip</item>
+    </style>
+    
+</resources>

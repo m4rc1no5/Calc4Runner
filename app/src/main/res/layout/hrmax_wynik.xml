@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:orientation="vertical" android:padding="4dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:layout_gravity="center" android:id="@+id/hrmax_tv_wynik"></TextView>
+        <TextView android:layout_height="wrap_content" android:id="@+id/hrmax_tv_wynik_przedzial" android:layout_width="wrap_content" android:gravity="center" android:layout_gravity="center" android:textSize="28dip" android:textStyle="bold" android:textColor="@color/zielony" android:paddingTop="5dip" android:paddingBottom="8dip"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/hrmax_szczegolowe_wyniki" android:layout_gravity="center" android:textSize="11dip"></TextView>
+        <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/tbl_szary_ciemny" android:id="@+id/hrmax_tabelka" android:visibility="invisible" android:layout_margin="4dip">
+            <TableRow android:layout_gravity="top" android:layout_height="wrap_content" android:id="@+id/tableRow4" android:layout_width="wrap_content" android:paddingLeft="4dip" android:paddingRight="4dip" android:paddingBottom="2dip" android:paddingTop="4dip">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/textView1" android:textStyle="bold" android:textSize="11dip" android:textColor="@color/bialy" android:text="@string/metoda" android:layout_weight="0.7"></TextView>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView2" android:textStyle="bold" android:gravity="right" android:textSize="11dip" android:textColor="@color/bialy" android:text="@string/hrmax" android:layout_weight="0.3"></TextView>
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" android:id="@+id/TableRow08" android:layout_width="wrap_content" android:paddingLeft="4dip" android:paddingRight="4dip" android:paddingBottom="2dip" android:paddingTop="2dip" android:background="@color/tbl_szary_jasny">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TextView22" android:textSize="11dip" android:layout_weight="0.7" android:text="@string/hrmax_metoda_1_nazwa" android:textColor="@color/zielony" android:textStyle="bold"></TextView>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:textSize="11dip" android:layout_weight="0.3" android:textColor="@color/zielony" android:textStyle="bold" android:id="@+id/hrmax_metoda_1_input"></TextView>
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" android:id="@+id/TableRow07" android:layout_width="wrap_content" android:paddingLeft="4dip" android:paddingRight="4dip" android:paddingBottom="2dip" android:paddingTop="2dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TextView19" android:textSize="11dip" android:layout_weight="0.7" android:text="@string/hrmax_metoda_2_nazwa"></TextView>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:textSize="11dip" android:layout_weight="0.3" android:textStyle="bold" android:id="@+id/hrmax_metoda_2_input"></TextView>
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" android:id="@+id/TableRow06" android:layout_width="wrap_content" android:paddingLeft="4dip" android:paddingRight="4dip" android:paddingBottom="2dip" android:paddingTop="2dip" android:background="@color/tbl_szary_jasny">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TextView16" android:textSize="11dip" android:layout_weight="0.7" android:text="@string/hrmax_metoda_3_nazwa"></TextView>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:textSize="11dip" android:layout_weight="0.3" android:textStyle="bold" android:id="@+id/hrmax_metoda_3_input"></TextView>
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" android:id="@+id/TableRow05" android:layout_width="wrap_content" android:paddingLeft="4dip" android:paddingRight="4dip" android:paddingBottom="2dip" android:paddingTop="2dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TextView13" android:textSize="11dip" android:layout_weight="0.7" android:text="@string/hrmax_metoda_4_nazwa"></TextView>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:textSize="11dip" android:layout_weight="0.3" android:textStyle="bold" android:id="@+id/hrmax_metoda_4_input"></TextView>
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" android:id="@+id/TableRow04" android:layout_width="wrap_content" android:paddingLeft="4dip" android:paddingRight="4dip" android:paddingBottom="2dip" android:paddingTop="2dip" android:background="@color/tbl_szary_jasny">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TextView10" android:textSize="11dip" android:layout_weight="0.7" android:text="@string/hrmax_metoda_5_nazwa"></TextView>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:textSize="11dip" android:layout_weight="0.3" android:textStyle="bold" android:id="@+id/hrmax_metoda_5_input"></TextView>
+            </TableRow>
+        </TableLayout>
+</LinearLayout>

@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tz_tabela_01_polska_szkola_treningu" android:paddingTop="10dip" android:textSize="11dip"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tbl_szary_ciemny"
+        android:stretchColumns="3" >
+
+        <TableRow
+            android:id="@+id/naglowek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="4dip" >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/strefa"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/hrmax_procent"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tetno_z_jednostka"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/zastosowanie"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="90dip" android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/strefa1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/tbl_szary_jasny"
+            android:baselineAligned="false"
+            android:paddingBottom="2dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="4dip" >
+
+            <TextView
+                android:id="@+id/bc1_nazwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/bc1_zakres_tetna_w_procentach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/bc1_zakres_tetna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zastosowanie_bc1"
+                android:textSize="11dip"
+                android:width="90dip" android:paddingBottom="2dip" android:paddingLeft="4dip" android:paddingRight="4dip" android:paddingTop="4dip"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/strefa2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="4dip" >
+
+            <TextView
+                android:id="@+id/bc2_nazwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/bc2_zakres_tetna_w_procentach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/bc2_zakres_tetna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zastosowanie_bc2"
+                android:textSize="11dip"
+                android:width="90dip" android:paddingBottom="2dip" android:paddingLeft="4dip" android:paddingRight="4dip" android:paddingTop="4dip"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/tbl_szary_jasny"
+            android:paddingBottom="2dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="4dip" >
+
+            <TextView
+                android:id="@+id/bc3_nazwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/bc3_zakres_tetna_w_procentach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/bc3_zakres_tetna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zastosowanie_bc3"
+                android:textSize="11dip"
+                android:width="90dip" android:paddingBottom="2dip" android:paddingLeft="4dip" android:paddingRight="4dip" android:paddingTop="4dip"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tz_tabela_01_polska_szkola_treningu_opis_hrmax"
+        android:textSize="10dip" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tz_tabela_02_strefy_tetna_wg_karvonena" android:paddingTop="10dip" android:textSize="11dip"/>
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tbl_szary_ciemny"
+        android:stretchColumns="3" >
+
+        <TableRow
+            android:id="@+id/TableRow05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="4dip" >
+
+            <TextView
+                android:id="@+id/TextView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/strefa"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/TextView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/hrmax_procent"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/TextView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tetno_z_jednostka"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/TextView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/zastosowanie"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="90dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/tbl_szary_jasny"
+            android:baselineAligned="false"
+            android:paddingBottom="2dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="4dip" >
+
+            <TextView
+                android:id="@+id/strefa1_nazwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/strefa1_zakres_tetna_w_procentach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/strefa1_zakres_tetna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/TextView09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:text="@string/zastosowanie_garnin_strefa_1"
+                android:textSize="11dip"
+                android:width="90dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="4dip" >
+
+            <TextView
+                android:id="@+id/strefa2_nazwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/strefa2_zakres_tetna_w_procentach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/strefa2_zakres_tetna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/TextView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:text="@string/zastosowanie_garnin_strefa_2"
+                android:textSize="11dip"
+                android:width="90dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/tbl_szary_jasny"
+            android:paddingBottom="2dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="4dip" >
+
+            <TextView
+                android:id="@+id/strefa3_nazwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/strefa3_zakres_tetna_w_procentach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/strefa3_zakres_tetna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/TextView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:text="@string/zastosowanie_garnin_strefa_3"
+                android:textSize="11dip"
+                android:width="90dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="4dip" >
+
+            <TextView
+                android:id="@+id/strefa4_nazwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/strefa4_zakres_tetna_w_procentach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/strefa4_zakres_tetna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/TextView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:text="@string/zastosowanie_garnin_strefa_4"
+                android:textSize="11dip"
+                android:width="90dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/tbl_szary_jasny"
+            android:paddingBottom="2dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="4dip" >
+
+            <TextView
+                android:id="@+id/strefa5_nazwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textSize="11dip"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/strefa5_zakres_tetna_w_procentach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/strefa5_zakres_tetna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:textColor="@color/bialy"
+                android:textSize="11dip"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/TextView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip"
+                android:text="@string/zastosowanie_garnin_strefa_5"
+                android:textSize="11dip"
+                android:width="90dip" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tz_tabela_02_strefy_tetna_wg_karvonena_opis_hrmax"
+        android:textSize="10dip" />
+
+</LinearLayout>

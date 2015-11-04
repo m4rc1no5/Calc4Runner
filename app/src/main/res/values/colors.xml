@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="zielony">#00EE76</color>
+    <color name="czerwony">#CD4F39</color>
+    <color name="tbl_szary_ciemny">#333333</color>
+    <color name="tbl_szary_jasny">#404040</color>
+    <color name="bialy">#fff</color>
+    
+</resources>

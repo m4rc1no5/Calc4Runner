@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="pl.kruzar.calc4runner"
+      android:installLocation="auto" android:versionName="@string/app_version" android:versionCode="8">
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/themePaskaTytulowego" android:debuggable="false">
+        <activity android:name=".Calc4RunnerActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Pace2SpeedActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".BMIActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".PreferencesActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".OProgramieActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".HRmaxActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".PomocActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".PomocWybranegoCalcActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".RaceTimePredictorActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".TrainingZonesActivity" android:screenOrientation="portrait"></activity>
+
+    </application>
+</manifest>
